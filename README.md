@@ -41,7 +41,8 @@ git clone https://github.com/prathamesh0413/docker-fastapi-test
    
    Once the application is running, access it at http://localhost:8000/docs to use the API and view documentation.
 
- 4.To destroy the Application 
+ 4.To Destroy the Containers
+    Stops containers and removes containers, networks, volumes, and images created by up
 
     docker-compose down
 
