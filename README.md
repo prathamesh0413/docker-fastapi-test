@@ -32,19 +32,26 @@ To start, clone this repository to your local machine:
 git clone https://github.com/prathamesh0413/docker-fastapi-test
       cd docker-fastapi-test
       
-2. Build and Run the Application Using Docker
-   To build the Docker image and start the application:
+1. Build and run the Docker container
+   Run the following commands to start the app using Docker Compose:
+
+    docker-compose up --build
+
+2. Access the application
    
-    docker-compose up 
-    
-4. Access the Application
+   Once running, the FastAPI application is accessible at http://localhost:8000.
+
+3. Stopping the Docker container
    
-   Once the application is running, access it at http://localhost:8000/docs to use the API and view documentation.
+     docker-compose down
 
- 4.To Destroy the Containers
-    Stops containers and removes containers, networks, volumes, and images created by up
+API Endpoints
+Using the API
 
-    docker-compose down
+To Retrieve the List of Users:
 
-  
-To Retrieve the List of Users: In the API documentation, find the GET /users endpoint. Click the "Try it out" button. Press the "Execute" button to see the results. The response will display below the request details, showing user information from the users.json file.
+  Find the GET /users endpoint in the documentation.
+  Click the "Try it out" button.
+  Press the "Execute" button to send the request.
+  The response will appear below, showing user information from the users.json file.
+
