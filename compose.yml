@@ -1,10 +1,12 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  app:
+  fastapi_app:
     build: .
     ports:
       - "8000:8000"
     volumes:
-      - ./data:/app/data  # Bind mount for data persistence
-    restart: always
+      - ./app/data:/app/app/data
+    environment:
+      - DATA_PATH=/app/app/data
+    restart: always 
